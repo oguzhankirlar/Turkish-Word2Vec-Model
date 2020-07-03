@@ -20,7 +20,7 @@ def tokenize_tr(content, token_min_len=2, token_max_len=50, lower=True):
 
 
 if __name__ == '__main__':
-    inputFile = "/home/oguzhan/PycharmProjects/OguzModel/trwiki-20200620-pages-articles-multistream.xml.bz2"
+    inputFile = sys.argv[1] # Derlem dosyasının adresini buraya yazabilirsiniz ya da programı çalıştırırken input olarak verebilirsiniz
     outputFile = "wiki.tr.txt"
     wiki = WikiCorpus(inputFile, lemmatize=False, tokenizer_func=tokenize_tr)
     output = open(outputFile, "w", encoding="utf-8")
