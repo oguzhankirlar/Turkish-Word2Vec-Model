@@ -24,10 +24,6 @@ if __name__ == '__main__':
     outputFile = "wiki.tr.txt"
     wiki = WikiCorpus(inputFile, lemmatize=False, tokenizer_func=tokenize_tr)
     output = open(outputFile, "w", encoding="utf-8")
-    i = 0
     for text in wiki.get_texts():
         output.write(" ".join(text) + "\n")
-        i += 1
-        if i % 10000 == 0:
-            logging.info("Saved " + str(i) + " articles.")
     output.close()
