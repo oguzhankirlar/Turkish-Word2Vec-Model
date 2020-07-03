@@ -1,4 +1,4 @@
-# Turkish-Word2Vec
+# Turkish-Word2Vec-Model
 Pre-trained Turkish Word2Vec Model <br/>
 Wikipedia'daki tüm Türkçe makalelerden Türkçe word2vec modeli oluşturulmuştur. Kod gensim kütüphanesi kullanılarak Python 3 ile yazılmıştır. <br/>
 Türkçe dilinde yazılmış tüm wikipedia makalelerine [buradan](https://dumps.wikimedia.org/trwiki/) ulaşabilirsiniz. En son yayınlanmış 20200701 adlı derlemi bu link üzerinden indirebilirsiniz. <br/>
